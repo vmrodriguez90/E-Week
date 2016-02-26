@@ -7,10 +7,8 @@ function FibonacciSerie(){
         if(prev%2==0) sumEven.push(prev);
         if(next%2==0) sumEven.push(next);
     }
-    while(pre+curr > 4000000)
+    while(prev+next < 4000000)
     return sumEven.reduce(function(a, b) {
         return a + b;
     });
 }
-
-
